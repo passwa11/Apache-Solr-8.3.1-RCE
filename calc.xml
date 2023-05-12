@@ -21,7 +21,7 @@
   <xsl:template match="doc/*[@name='score']" priority="100">
   </xsl:template>
 
-  <xsl:template match="doc">
+<!--  <xsl:template match="doc">
     <xsl:variable name="pos" select="position()"/>
     <doc>
         <xsl:apply-templates>
@@ -29,7 +29,7 @@
         </xsl:apply-templates>
     </doc>
   </xsl:template>
-
+-->
   <!-- Flatten arrays to duplicate field lines -->
   <xsl:template match="doc/arr" priority="100">
       <xsl:variable name="fn" select="@name"/>
